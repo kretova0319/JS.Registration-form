@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрационная форма</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1>Регистрационная форма</h1>
+      <form name="myForm" action="/">
+        <label for="myName" class="form__label">Имя:</label>
+
+        <input
+          type="text"
+          id="myName"
+          name="myName"
+          class="name__input focus filling"
+          value=""
+          placeholder="Введите имя"
+        />
+        <p class="checkError" id="checkName"></p>
+        <p class="empty" id="emptyName"></p>
+
+        <label for="myMail" class="form__label">Электронная почта:</label>
+        <input
+          type="text"
+          id="myMail"
+          name="myMail"
+          class="mail__input focus filling"
+          value=""
+          placeholder="Введите электронную почту"
+        />
+        <p class="checkError" id="checkEmail"></p>
+        <p class="empty" id="emptyEmail"></p>
+
+        <label for="myAge" class="form__label">Возраст:</label>
+        <input
+          type="number"
+          id="myAge"
+          name="myAge"
+          class="age__input focus filling"
+          value=""
+          placeholder="Введите ваш возраст"
+        />
+        <p class="checkError" id="checkAge"></p>
+        <p class="empty" id="emptyAge"></p>
+
+        <label class="form__gender">Ваш пол:</label>
+        <input type="radio" name="gender" value="Мужской" />
+        Мужской
+        <input type="radio" name="gender" value="Женский" />
+        Женский
+        <p class="checkError" id="checkGender"></p>
+
+        <label class="form__job">Ваша профессия</label>
+        <select name="myJob" required placeholder="Профессия">
+          <option value="0">- Выберите -</option>
+          <option value="1">Врач</option>
+          <option value="2">Программист</option>
+          <option value="3">Учитель</option>
+          <option value="4">Дизайнер</option>
+          <option value="5">Инженер</option>
+          <option value="6">Продавец</option>
+          <option value="7">Другое</option>
+        </select>
+        <p class="checkError" id="checkJob"></p>
+
+        <label for="myPassword" class="form__label">Пароль:</label>
+        <input
+          type="password"
+          id="myPassword"
+          name="myPassword"
+          class="password__input focus filling"
+          value=""
+          placeholder="Введите пароль"
+        />
+        <p class="checkError" id="checkPassword"></p>
+        <p class="empty" id="emptyPassword"></p>
+
+        <label class="form__label">Согласен на обработку данных</label>
+        <input
+          type="checkbox"
+          id="myCheckbox"
+          name="myCheckbox"
+          class="checkbox__input"
+        />
+        <p class="checkError" id="checkAgreement"></p>
+
+        <button type="submit" id="submitBtn" disabled>Отправить</button>
+      </form>
+    </section>
+    <script src="week16_2.js"></script>
+  </body>
+</html>

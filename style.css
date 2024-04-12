@@ -1,0 +1,62 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 20px;
+  min-width: 320px;
+  width: 1440px;
+}
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #f0eded;
+  padding: 20px 60px 20px 60px;
+}
+h1 {
+  font-size: 40px;
+}
+.checkError,
+.empty {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+button[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  font-size: 20px;
+}
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+option {
+  font-size: 23px;
+}
+input[type="radio"],
+[type="checkbox"] {
+  width: 15%;
+  height: 20px;
+  align-items: center;
+}
+#message {
+  padding-left: 20px;
+  font-size: 14px;
+}
